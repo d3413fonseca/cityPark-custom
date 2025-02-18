@@ -14,8 +14,7 @@
                                     12º1C2 para a disciplina de TAWEB.
                                 </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                    <a class="btn btn-primary btn-lg px-4 me-sm-1" href="#timeline">Ver timeline</a>
-                                    <a class="btn btn-secondary btn-lg px-4 me-sm-1" href="#etapas">Explorar etapas</a>
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-1" href="#etapas">Explorar etapas</a>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +31,7 @@
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                             <h2 class="fw-bolder mb-0"><i><b>Funcionalidades</b> do Projeto</i></h2>
                         </div>
                         <div class="col-lg-8">
@@ -46,7 +45,6 @@
                                     <p class="mb-0">
                                         Para aceder ao parque, é necessário utilizar um cartão RFID. O nosso sistema
                                         admin permite fazer a gestão completa de todos os cartões que acedam ao site.
-                                        É possível 
                                     </p>
                                 </div>
 
@@ -140,17 +138,7 @@
                 </div>
             </section>
 
-            <div 
-                style="
-                    width: 100%; 
-                    height: 1px; 
-                    background-color: #6c757d;
-                    "
-                class="aos-init aos-animate" 
-                data-aos="slide-left"
-                data-aos-duration="1000"
-            >
-            </div>
+            <div id="pre-etapas"></div>
 
             <!-- Pré-vista das etapas do projeto
                 quero incluir aqui uma coisa semelhante à timeline jquery mas não sei se dá pra fazer isso -->
@@ -169,7 +157,7 @@
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('img/placeholder001.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b> Etapa 1 </b></h3>
                                     <p class="card-text">Entrada/Saída do Parque</p>
@@ -189,7 +177,7 @@
 
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('img/placeholder002.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b> Etapa 2 </b></h3>
                                     <p class="card-text">Lugares de Estacionamento</p>
@@ -209,7 +197,7 @@
 
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('img/placeholder003.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b>Etapa 3</b></h3>
                                     <p class="card-text">Ethernet Shield</p>

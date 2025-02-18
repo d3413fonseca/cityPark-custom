@@ -18,9 +18,9 @@
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4 text-center"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('img/placeholder002.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->
-                                <section class="mb-5">
+                                <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center">
                                         <i>
                                             Nesta etapa vamos fazer a gestão de 15 lugares de estacionamento tendo em atenção
@@ -55,7 +55,51 @@
                                         </i>
                                     </p>
 
-                                    <div class="py-3">
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+                                    
+                                    <div class="container py-3">
+                                        <h1 class="text-center my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Tecnologias Usadas</i></b></h1>
+                                        <div class="row gx-5 gy-1 row-cols-1 row-cols-md-4 comp">
+                                            <div class="col aos-init aos-animate" data-aos="fade-up">
+                                                <img src="{{ URL::asset('img/img011.png') }}" alt="LED RGB">
+                                                <h4>LED RGB</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado em todos os lugares do parque, onde se irá acender
+                                                    na cor vermelha, verde ou azul. 
+                                                </p>
+                                            </div>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                                <img src="{{ URL::asset('img/img013.jpg') }}" alt="Sensor RFID">
+                                                <h4>Photoresistor</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado para detetar a ocupação dos lugares no parque.
+                                                </p>
+                                            </div>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                                <img src="{{ URL::asset('img/img014.jpg') }}" alt="Motor Servo">
+                                                <h4>Potenciómetro</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado para calibrar a sensibilidade dos photoresistores.
+                                                </p>
+                                            </div>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                                <img src="{{ URL::asset('img/img015.jpg') }}" alt="Motor Servo">
+                                                <h4>Chip CD74HC4052</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado para expandir o número de portas analógicas do Arduino.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>calibratingThePhotoresistor()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir calibrar os <i>photoresistors</i> de forma a que todos
@@ -102,7 +146,9 @@
                                         </p>
                                     </div>
 
-                                    <div class="py-3">
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>freePlaces()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir visualizar os lugares que estão livres no parque, utilizando
@@ -132,7 +178,9 @@
                                         </p>
                                     </div>
 
-                                    <div class="py-3">
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>putOnDisplay()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir o controlo de ambos os displays de 7 segmentos, para exibir 

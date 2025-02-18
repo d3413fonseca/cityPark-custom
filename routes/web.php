@@ -11,6 +11,10 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/galeria', function () {
+    return view('galeria');
+})->name('galeria');
+
 Route::prefix('etapas')->group(function () {
     Route::get('/etapa1', function () {
         return view('etapas/etapa1');

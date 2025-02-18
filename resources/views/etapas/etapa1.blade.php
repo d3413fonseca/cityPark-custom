@@ -18,17 +18,55 @@
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4 text-center"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('img/placeholder001.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->
-                                <section class="mb-5">
+                                <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center mb-5">
                                         <i>
                                             Nesta fase do projeto, pretendemos que o acesso e saída do parque seja controlado por um sistema de cartão RFID. 
                                             Há duas cancelas, em que cada uma possui um semáforo com luz vermelha/verde que indica quando o utilizador pode avançar.
                                         </i>
                                     </p>
+                                    
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+                                    
+                                    <div class="container py-3">
+                                        <h1 class="text-center my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Tecnologias Usadas</i></b></h1>
 
-                                    <div class="py-3">
+                                        <div class="row gx-5 gy-1 row-cols-1 row-cols-md-3 comp">
+                                            <div class="col aos-init aos-animate" data-aos="fade-up">
+                                                <img src="{{ URL::asset('img/img011.png') }}" alt="LED RGB">
+                                                <h4>LED RGB</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado em todos os lugares do parque, onde se irá acender
+                                                    na cor vermelha, verde ou azul. 
+                                                </p>
+                                            </div>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                                <img src="{{ URL::asset('img/img003.png') }}" alt="Sensor RFID">
+                                                <h4>Sensor RFID</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizado para registar um utilizador, por meio de utilização
+                                                    de cartões RFID.
+                                                </p>
+                                            </div>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                                <img src="{{ URL::asset('img/img012.png') }}" alt="Motor Servo">
+                                                <h4>Motor Servo</h4>
+                                                <hr>
+                                                <p>
+                                                    Utilizados para a cancela do parque, servindo como entrada
+                                                    e saída.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>openCloseGate()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai permitir a abertura e fecho de cada uma das cancelas.
@@ -49,7 +87,9 @@
                                         </p>
                                     </div>
 
-                                    <div class="py-3">
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>readRFID()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai fazer a leitura de um cartão ou chave RFID e vai retornar o estado da permissão,
@@ -71,7 +111,9 @@
                                         </p>
                                     </div>
 
-                                    <div class="py-3">
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+
+                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>displayMessage()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir apresentar mensagens nos ecrãs LCD de entrada e saída
