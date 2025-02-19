@@ -124,12 +124,14 @@ p {
 
 /* escala em hover */
 .card, 
-.sub-footer img
+.sub-footer img,
+.nav-item
 {
     transition: transform 0.25s ease;
 }
 .card:hover, 
-.sub-footer img:hover
+.sub-footer img:hover,
+.nav-item:hover
 {
     transform: scale(1.05);
 }
@@ -139,4 +141,10 @@ p {
     height: 300px;
     object-fit: cover;
     box-shadow: 0px 0px 10px black;
+}
+
+.circuit{
+    width: 50%;
+    height: 50%;
+
 }

@@ -3,7 +3,8 @@
 @section('content')
 
 <div class="container">
-    <h1 class="text-center my-3"><b>Galeria</b></h1>
+    <h1 class="text-center my-3"><b>Galeria do Projeto</b></h1>
+    <hr>
     <div class="row gx-2 gy-2 rows-cols-md-4 my-3" id="galeria">
         <div class="col">
             <img class="img-fluid rounded" src="{{ URL::asset('img/gal001.jpg') }}" alt="..." />
@@ -32,6 +33,11 @@
             <img class="img-fluid rounded" src="{{ URL::asset('img/gal008.jpg') }}" alt="..." />
         </div>
     </div>
+    
+    <hr>
+    <h1 class="text-center my-3"><b>Esquema Completo</b></h1>
+    <img class="img-fluid rounded" src="{{ URL::asset('img/fullCircuit.png') }}" alt="..." />
+
 </div>
 
 @endsection

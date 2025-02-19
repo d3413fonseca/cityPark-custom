@@ -47,7 +47,7 @@
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="{{ route('etapa1') }}">Etapa 1</a></li>
                                     <li><a class="dropdown-item" href="{{ route('etapa2') }}">Etapa 2</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Etapa 3</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('etapa3') }}">Etapa 3</a></li>
                                 </ul>
                             </li>
                         </ul>

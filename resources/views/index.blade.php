@@ -100,7 +100,9 @@
                                         como a indicação de vagas disponíveis ou avisos de segurança.
                                     </p>
                                 </div>
-                                
+                            </div>
+
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
                                         <img src="{{ URL::asset('img/img008.png') }}" alt="Sensor de Chama">
@@ -200,7 +202,7 @@
                                 <img class="card-img-top" src="{{ URL::asset('img/placeholder003.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b>Etapa 3</b></h3>
-                                    <p class="card-text">Ethernet Shield</p>
+                                    <p class="card-text">Ethernet Shield <small>(TBA)</small></p>
                                     <hr>
                                     <p class="card-text mb-2">
                                         <small> 

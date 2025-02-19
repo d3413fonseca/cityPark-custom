@@ -66,6 +66,14 @@
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
 
+                                    <div class="container py-3 text-center">
+                                        <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Circuito da Etapa</i></b></h1>
+
+                                        <img class="circuit aos-init aos-animate" data-aos="fade-up" src="{{ URL::asset('img/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
+                                    </div>
+
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+
                                     <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>openCloseGate()</i></h1>
                                         <p class="fs-5">
@@ -87,7 +95,7 @@
                                         </p>
                                     </div>
 
-                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
 
                                     <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>readRFID()</i></h1>
@@ -111,7 +119,7 @@
                                         </p>
                                     </div>
 
-                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
 
                                     <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>displayMessage()</i></h1>

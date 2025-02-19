@@ -22,6 +22,9 @@ Route::prefix('etapas')->group(function () {
     Route::get('/etapa2', function () {
         return view('etapas/etapa2');
     })->name('etapa2');
+    Route::get('/etapa3', function () {
+        return view('etapas/etapa3');
+    })->name('etapa3');
 });
 
 Route::get('/dashboard', 
