@@ -32,7 +32,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
                 <div class="container px-5">
                     <a href="{{ route('index') }}">
-                        <img src="{{ URL::asset('img/img001.png') }}"  alt="Colégio de São Gonçalo">
+                        <img src="{{ URL::asset('images/img001.png') }}"  alt="Colégio de São Gonçalo">
                     </a>
                     <a class="navbar-brand" href="{{ route('index') }}">
                         <b><span style="font-size: 25px;"> CityPark </span></b>
@@ -50,6 +50,39 @@
                                     <li><a class="dropdown-item" href="{{ route('etapa3') }}">Etapa 3</a></li>
                                 </ul>
                             </li>
+                            @if (Route::has('login'))
+                                @auth
+                                    <li class="nav-item">
+                                        <a
+                                            href="{{ url('/dashboard') }}"
+                                            class="nav-link"
+                                        >
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a
+                                            href="{{ route('login') }}"
+                                            class="nav-link"
+                                        >
+                                            Log-in
+                                        </a>
+                                    </li>
+                                    
+                                    @if (Route::has('register'))
+                                        <li class="nav-item">
+                                            <a
+                                                href="{{ route('register') }}"
+                                                class="nav-link"
+                                            >
+                                                Registar
+                                            </a>
+                                        </li>
+                                    @endif
+                                    
+                                @endauth
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -61,13 +94,13 @@
 
         <div class="sub-footer my-5 mx-auto">
             <a href="https://colegiosaogoncalo.pt/ensino/ensino-secundario/cursos-com-planos-proprios/informatica-aplicada-a-web/">
-                <img src="{{ URL::asset('img/logo002.png') }}" alt="Informática Aplicada à Web">
+                <img src="{{ URL::asset('images/logo002.png') }}" alt="Informática Aplicada à Web">
             </a>
             <a href="https://colegiosaogoncalo.pt/">
-                <img src="{{ URL::asset('img/logo001.png') }}" class="mx-4" alt="Colégio São Gonçalo" style="width: 150px; height: 150px;">
+                <img src="{{ URL::asset('images/logo001.png') }}" class="mx-4" alt="Colégio São Gonçalo" style="width: 150px; height: 150px;">
             </a>
             <a href="https://pessoas2030.gov.pt/">
-                <img src="{{ URL::asset('img/logo003.png') }}" alt="Pessoas 2030 / Portugal 2030">
+                <img src="{{ URL::asset('images/logo003.png') }}" alt="Pessoas 2030 / Portugal 2030">
             </a>
         </div>
 

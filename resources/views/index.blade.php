@@ -19,7 +19,7 @@
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                            <video class="img-fluid rounded-3 video-shadow my-5" id="headervid" src="{{ URL::asset('vid/vid001-mute.mp4') }}" type="video/mp4" controls autoplay loop></video>
+                            <video class="img-fluid rounded-3 video-shadow my-5" id="headervid" src="{{ URL::asset('videos/vid001-mute.mp4') }}" type="video/mp4" controls autoplay loop></video>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img003.png') }}" alt="RFID">
+                                        <img src="{{ URL::asset('images/img003.png') }}" alt="RFID">
                                     </div>
                                     <h5><b>Acesso por RFID</b></h5>
                                     <hr>
@@ -50,7 +50,7 @@
 
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img005.jpg') }}" alt="RFID">
+                                        <img src="{{ URL::asset('images/img005.jpg') }}" alt="RFID">
                                     </div>
                                     <h5><b>15 Lugares de Estacionamento</b></h5>
                                     <hr>
@@ -67,7 +67,7 @@
                             <div class="row gx-5 row-cols-1 row-cols-md-3">
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img002.jpg') }}" alt="RFID">
+                                        <img src="{{ URL::asset('images/img002.jpg') }}" alt="RFID">
                                     </div>
                                     <h5><b>Luzes Exteriores</b></h5>
                                     <hr>
@@ -79,7 +79,7 @@
 
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img004.jpeg') }}" alt="Sensor de Chama">
+                                        <img src="{{ URL::asset('images/img004.jpeg') }}" alt="Sensor de Chama">
                                     </div>
                                     <h5><b>Deteção de Incêndios</b></h5>
                                     <hr>
@@ -91,7 +91,7 @@
 
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img006.png') }}" alt="Sensor de Chama">
+                                        <img src="{{ URL::asset('images/img006.png') }}" alt="Sensor de Chama">
                                     </div>
                                     <h5><b>Informação para utilizadores</b></h5>
                                     <hr>
@@ -105,19 +105,19 @@
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img008.png') }}" alt="Sensor de Chama">
+                                        <img src="{{ URL::asset('images/img008.png') }}" alt="Sensor de Chama">
                                     </div>
                                     <h5><b>Aplicação móvel</b></h5>
                                     <hr>
                                     <p class="mb-0">
-                                        O nosso projeto proporciona também uma aplicação móvel conveniente feita no App Inventor, permitindo 
+                                        O nosso projeto proporciona uma aplicação móvel conveniente feita no App Inventor, permitindo 
                                         uma melhor gestão do parque independentemente do dispositivo acedido.
                                     </p>
                                 </div>
 
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('img/img009.png') }}" alt="Sensor de Chama">
+                                        <img src="{{ URL::asset('images/img009.png') }}" alt="Sensor de Chama">
                                     </div>
                                     <h5><b>Página Web</b></h5>
                                     <hr>
@@ -142,8 +142,7 @@
 
             <div id="pre-etapas"></div>
 
-            <!-- Pré-vista das etapas do projeto
-                quero incluir aqui uma coisa semelhante à timeline jquery mas não sei se dá pra fazer isso -->
+            <!-- Pré-vista das etapas do projeto -->
             <section class="py-5" id="etapas">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center aos-init aos-animate" data-aos="fade-in">
@@ -159,7 +158,7 @@
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{ URL::asset('img/placeholder001.jpg') }}" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('images/placeholder001.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b> Etapa 1 </b></h3>
                                     <p class="card-text">Entrada/Saída do Parque</p>
@@ -179,7 +178,7 @@
 
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{ URL::asset('img/placeholder002.jpg') }}" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('images/placeholder002.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b> Etapa 2 </b></h3>
                                     <p class="card-text">Lugares de Estacionamento</p>
@@ -199,7 +198,7 @@
 
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{ URL::asset('img/placeholder003.jpg') }}" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('images/placeholder003.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b>Etapa 3</b></h3>
                                     <p class="card-text">Ethernet Shield <small>(TBA)</small></p>

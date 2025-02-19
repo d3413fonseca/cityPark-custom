@@ -11,14 +11,14 @@
                                 <!-- Post header-->
                                 <header class="mb-4">
                                     <!-- Post title-->
-                                    <h1 class="fw-bolder mb-1">Etapa 1</h1>
+                                    <h1 class="fw-bolder mb-1">Entrada / Saída do Parque</h1>
                                     <!-- Post meta content-->
-                                    <div class="text-muted fst-italic mb-2">Entrada / Saída do Parque</div>
+                                    <div class="text-muted fst-italic mb-2">Etapa 1</div>
                                     <!-- Post categories-->
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('img/placeholder001.jpg') }}" alt="..." /></figure>
+                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder001.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->
                                 <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center mb-5">
@@ -35,7 +35,7 @@
 
                                         <div class="row gx-5 gy-1 row-cols-1 row-cols-md-3 comp">
                                             <div class="col aos-init aos-animate" data-aos="fade-up">
-                                                <img src="{{ URL::asset('img/img011.png') }}" alt="LED RGB">
+                                                <img src="{{ URL::asset('images/img011.png') }}" alt="LED RGB">
                                                 <h4>LED RGB</h4>
                                                 <hr>
                                                 <p>
@@ -44,7 +44,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                                                <img src="{{ URL::asset('img/img003.png') }}" alt="Sensor RFID">
+                                                <img src="{{ URL::asset('images/img003.png') }}" alt="Sensor RFID">
                                                 <h4>Sensor RFID</h4>
                                                 <hr>
                                                 <p>
@@ -53,7 +53,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                                <img src="{{ URL::asset('img/img012.png') }}" alt="Motor Servo">
+                                                <img src="{{ URL::asset('images/img012.png') }}" alt="Motor Servo">
                                                 <h4>Motor Servo</h4>
                                                 <hr>
                                                 <p>
@@ -69,7 +69,7 @@
                                     <div class="container py-3 text-center">
                                         <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Circuito da Etapa</i></b></h1>
 
-                                        <img class="circuit aos-init aos-animate" data-aos="fade-up" src="{{ URL::asset('img/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
+                                        <img class="circuit aos-init aos-animate" data-aos="fade-up" src="{{ URL::asset('images/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
                                     </div>
 
                                     <hr class="aos-init aos-animate" data-aos="slide-left">
@@ -85,7 +85,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/openCloseGate.png') }}" alt="openCloseGate()">
+                                            <img src="{{ URL::asset('images/openCloseGate.png') }}" alt="openCloseGate()">
                                         </div>
                                         
                                         <p class="fs-5">
@@ -107,7 +107,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/readRFID.png') }}" alt="readRFID()" class="w-50">
+                                            <img src="{{ URL::asset('images/readRFID.png') }}" alt="readRFID()" class="w-50">
                                         </div>
                                         
                                         <p class="fs-5">
@@ -131,7 +131,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/displayMessage.png') }}" alt="displayMessage()">
+                                            <img src="{{ URL::asset('images/displayMessage.png') }}" alt="displayMessage()">
                                         </div>
                                         
                                         <p class="fs-5">

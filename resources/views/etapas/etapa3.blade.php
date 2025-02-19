@@ -19,7 +19,7 @@
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Ethernet Shield</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('img/placeholder002.jpg') }}" alt="..." /></figure>
+                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder002.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->
                                 <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center">
@@ -62,7 +62,7 @@
                                         <h1 class="text-center my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Tecnologias Usadas</i></b></h1>
                                         <div class="row gx-5 gy-1 row-cols-1 row-cols-md-4 comp">
                                             <div class="col aos-init aos-animate" data-aos="fade-up">
-                                                <img src="{{ URL::asset('img/img011.png') }}" alt="LED RGB">
+                                                <img src="{{ URL::asset('images/img011.png') }}" alt="LED RGB">
                                                 <h4>LED RGB</h4>
                                                 <hr>
                                                 <p>
@@ -71,7 +71,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                                                <img src="{{ URL::asset('img/img013.jpg') }}" alt="Sensor RFID">
+                                                <img src="{{ URL::asset('images/img013.jpg') }}" alt="Sensor RFID">
                                                 <h4>Photoresistor</h4>
                                                 <hr>
                                                 <p>
@@ -79,7 +79,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                                <img src="{{ URL::asset('img/img014.jpg') }}" alt="Motor Servo">
+                                                <img src="{{ URL::asset('images/img014.jpg') }}" alt="Motor Servo">
                                                 <h4>Potenciómetro</h4>
                                                 <hr>
                                                 <p>
@@ -87,7 +87,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                <img src="{{ URL::asset('img/img015.jpg') }}" alt="Motor Servo">
+                                                <img src="{{ URL::asset('images/img015.jpg') }}" alt="Motor Servo">
                                                 <h4>Chip CD74HC4052</h4>
                                                 <hr>
                                                 <p>
@@ -110,7 +110,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/calibratingThePhotoresistor-1.png') }}" alt="calibratingThePhotoresistor() [1]" class="w-50">
+                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-1.png') }}" alt="calibratingThePhotoresistor() [1]" class="w-50">
                                         </div>
                                         
                                         <p class="fs-5">
@@ -136,7 +136,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/calibratingThePhotoresistor-2.png') }}" alt="calibratingThePhotoresistor() [2]">
+                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-2.png') }}" alt="calibratingThePhotoresistor() [2]">
                                         </div>
 
                                         <p class="fs-5">
@@ -160,7 +160,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/freePlaces.png') }}" alt="freePlaces()">
+                                            <img src="{{ URL::asset('images/freePlaces.png') }}" alt="freePlaces()">
                                         </div>
                                         
                                         <p class="fs-5">
@@ -192,7 +192,7 @@
                                         </p>
 
                                         <div class="text-center my-5">
-                                            <img src="{{ URL::asset('img/putOnDisplay.png') }}" alt="putOnDisplay()">
+                                            <img src="{{ URL::asset('images/putOnDisplay.png') }}" alt="putOnDisplay()">
                                         </div>
                                         
                                         <p class="fs-5">
