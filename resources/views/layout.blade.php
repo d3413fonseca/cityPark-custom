@@ -12,7 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ URL::asset('dist/css/styles.css') }}" rel="stylesheet" />
-        <link href="{{ URL::asset('dist/css/styles2.css') }}" rel="stylesheet" />
+        <link href="{{ URL::asset('css/customstyles.css') }}" rel="stylesheet" />
 
         <!-- ANIMATE ON SCROLL -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -69,18 +69,6 @@
                                             Log-in
                                         </a>
                                     </li>
-                                    
-                                    @if (Route::has('register'))
-                                        <li class="nav-item">
-                                            <a
-                                                href="{{ route('register') }}"
-                                                class="nav-link"
-                                            >
-                                                Registar
-                                            </a>
-                                        </li>
-                                    @endif
-                                    
                                 @endauth
                             @endif
                         </ul>

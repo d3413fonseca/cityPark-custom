@@ -11,48 +11,20 @@
                                 <!-- Post header-->
                                 <header class="mb-4">
                                     <!-- Post title-->
-                                    <h1 class="fw-bolder mb-1">Etapa 3</h1>
+                                    <h1 class="fw-bolder mb-1">Ethernet Shield</h1>
                                     <!-- Post meta content-->
-                                    <div class="text-muted fst-italic mb-2">Ethernet Shield</div>
+                                    <div class="text-muted fst-italic mb-2">Etapa 3</div>
                                     <!-- Post categories-->
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
                                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Ethernet Shield</a>
                                 </header>
                                 <!-- Preview image figure-->
-                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder002.jpg') }}" alt="..." /></figure>
+                                <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder003.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->
                                 <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center">
                                         <i>
-                                            Nesta etapa vamos fazer a gestão de 15 lugares de estacionamento tendo em atenção
-                                            os seguintes aspetos:
-                                            <br>
-                                            <ul class="lead fw-normal text-muted">
-                                                <li>
-                                                    Cada lugar é equipado com um <b>LED RGB</b>:
-                                                    <ul>
-                                                        <li>
-                                                            <b>Verde/Vermelho</b>: para vagas normais (verde para vaga livre,
-                                                            vermelho para ocupada).
-                                                        </li>
-                                                        <li>
-                                                            <b>Verde/Azul</b>: para vagas prioritárias (verde para livre,
-                                                            azul para ocupado).
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <b>Photoresistor</b> em cada lugar para detetar a ocupação da vaga.
-                                                </li>
-                                                <li>
-                                                    <b>Potenciómetro</b> para calibrar a sensibilidade dos photoresistores,
-                                                    ajustando a detecção de luz ambiente.
-                                                </li>
-                                                <li>
-                                                    Uso de um <b>Chip CD74HC4052</b> para expandir o número de portas analógicas
-                                                    no Arduino, permitindo o controlo eficaz dos sensores e LEDs.
-                                                </li>
-                                            </ul>
+                                            Honestamente não sei o que vamos escrever nesta etapa :D
                                         </i>
                                     </p>
 
@@ -62,20 +34,21 @@
                                         <h1 class="text-center my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Tecnologias Usadas</i></b></h1>
                                         <div class="row gx-5 gy-1 row-cols-1 row-cols-md-4 comp">
                                             <div class="col aos-init aos-animate" data-aos="fade-up">
-                                                <img src="{{ URL::asset('images/img011.png') }}" alt="LED RGB">
-                                                <h4>LED RGB</h4>
+                                                <img src="{{ URL::asset('images/img016.jpg') }}" alt="Ethernet Shield">
+                                                <h4>Ethernet Shield</h4>
                                                 <hr>
                                                 <p>
-                                                    Utilizado em todos os lugares do parque, onde se irá acender
-                                                    na cor vermelha, verde ou azul. 
+                                                    Utilizado para possibilitar a conexão da nossa 
+                                                    placa Arduino à Internet.
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                                                 <img src="{{ URL::asset('images/img013.jpg') }}" alt="Sensor RFID">
-                                                <h4>Photoresistor</h4>
+                                                <h4>Framework Laravel</h4>
                                                 <hr>
                                                 <p>
-                                                    Utilizado para detetar a ocupação dos lugares no parque.
+                                                    Utilizada para criar a página Web, e estabelecer a conexão
+                                                    com a nossa placa Arduino.
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">

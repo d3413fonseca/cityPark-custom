@@ -15,8 +15,12 @@
                                     <!-- Post meta content-->
                                     <div class="text-muted fst-italic mb-2">Etapa 1</div>
                                     <!-- Post categories-->
-                                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">LED RGB</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">Sensor RFID</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">Motor Servo</a>
                                 </header>
+
+                                
                                 <!-- Preview image figure-->
                                 <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder001.jpg') }}" alt="..." /></figure>
                                 <!-- Post content-->

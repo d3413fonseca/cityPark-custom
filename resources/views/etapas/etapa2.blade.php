@@ -15,7 +15,10 @@
                                     <!-- Post meta content-->
                                     <div class="text-muted fst-italic mb-2">Etapa 2</div>
                                     <!-- Post categories-->
-                                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Arduino</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">LED RGB</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">Photoresistor</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">Potenciómetro</a>
+                                    <a class="badge bg-secondary text-decoration-none link-light">Chip CD74HC4052</a>
                                 </header>
                                 <!-- Preview image figure-->
                                 <figure class="mb-4 text-center"><img class="img-fluid rounded imgetapa" src="{{ URL::asset('images/placeholder002.jpg') }}" alt="..." /></figure>

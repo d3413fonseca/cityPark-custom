@@ -65,10 +65,10 @@ body{
 }
 
 .etapa-ver{
-    transition: filter 1s ease;
+    transition: filter 0.5s ease;
 }
 .etapa-ver:hover{
-    filter: brightness(0.75);
+    filter: brightness(0.6);
 }
 
 ::selection{
@@ -96,7 +96,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     
-    filter:brightness(0.6) sepia();
+    filter: brightness(0.6);
     z-index: -1;
 }
 #objetivos ::selection{
@@ -119,11 +119,16 @@ p {
 #etapas h2{
     color: white;
 }
+#etapas ::selection, header ::selection{
+    background-color: white;
+    color: #212529
+}
 
 .imgetapa {
     width: 1250px;
     height: 250px;
     object-fit: cover;
+    box-shadow: 0px 0px 10px black;
 }
 
 /* estilo das imagens no conteúdo das páginas de etapas */
