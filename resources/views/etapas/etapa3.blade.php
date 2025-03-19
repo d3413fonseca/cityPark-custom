@@ -24,7 +24,9 @@
                                 <section class="mb-5 etapa">
                                     <p class="lead fw-normal fs-4 text-muted text-center">
                                         <i>
-                                            Honestamente não sei o que vamos escrever nesta etapa :D
+                                            Nesta etapa, foi criada uma página Web <i>admin</i> que se conecta a um Ethernet Shield, de modo
+                                            a gerir os <b>RFIDs</b> e os <b>clientes</b> registados no sistema, estabelecendo uma conexão entre o Arduino
+                                            e a página Web.
                                         </i>
                                     </p>
 
@@ -43,7 +45,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                                                <img src="{{ URL::asset('images/img013.jpg') }}" alt="Sensor RFID">
+                                                <img src="{{ URL::asset('images/img017.png') }}" alt="Framework Laravel">
                                                 <h4>Framework Laravel</h4>
                                                 <hr>
                                                 <p>
@@ -51,12 +53,13 @@
                                                     com a nossa placa Arduino.
                                                 </p>
                                             </div>
-                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                                <img src="{{ URL::asset('images/img014.jpg') }}" alt="Motor Servo">
-                                                <h4>Potenciómetro</h4>
+                                            <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                                <img src="{{ URL::asset('images/img003.png') }}" alt="Sensor RFID">
+                                                <h4>Sensor RFID</h4>
                                                 <hr>
                                                 <p>
-                                                    Utilizado para calibrar a sensibilidade dos photoresistores.
+                                                    Utilizado para registar um utilizador, por meio de utilização
+                                                    de cartões RFID.
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">

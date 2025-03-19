@@ -11,9 +11,14 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/galeria', function () {
-    return view('galeria');
-})->name('galeria');
+Route::prefix('/galeria')->name('galeria.')->group(function () {
+    Route::get('/', function () {
+        return view('galeria.index');
+    })->name('index');
+    Route::get('/maquete', function () {
+        return view('galeria.maquete');
+    })->name('maquete');
+});
 
 Route::prefix('etapas')->group(function () {
     Route::get('/etapa1', function () {

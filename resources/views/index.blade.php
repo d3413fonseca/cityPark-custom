@@ -67,7 +67,7 @@
                             <div class="row gx-5 row-cols-1 row-cols-md-3">
                                 <div class="col mb-5 h-100 aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
                                     <div class="obj mb-3">
-                                        <img src="{{ URL::asset('images/img002.jpg') }}" alt="RFID">
+                                        <img src="{{ URL::asset('images/img017.jpg') }}" alt="RFID">
                                     </div>
                                     <h5><b>Luzes Exteriores</b></h5>
                                     <hr>
@@ -201,17 +201,17 @@
                                 <img class="card-img-top" src="{{ URL::asset('images/placeholder003.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b>Etapa 3</b></h3>
-                                    <p class="card-text">Ethernet Shield <small>(TBA)</small></p>
+                                    <p class="card-text">Ethernet Shield</p>
                                     <hr>
                                     <p class="card-text mb-2">
-                                        <small> 
+                                        <small>
                                             Nesta etapa, trabalhámos em código Arduino e Laravel utilizando um Ethernet Shield,
                                             de modo a estabelecer uma conexão entre a placa e a página web.
                                         </small>
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="" class="etapa-ver">Ver etapa</a>
+                                    <a href="{{ route('etapa3') }}" class="etapa-ver">Ver etapa</a>
                                 </div>
                             </div>
                         </div>

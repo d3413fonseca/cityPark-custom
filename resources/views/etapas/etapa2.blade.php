@@ -73,7 +73,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                                                <img src="{{ URL::asset('images/img013.jpg') }}" alt="Sensor RFID">
+                                                <img src="{{ URL::asset('images/img013.jpg') }}" alt="Photoresistor">
                                                 <h4>Photoresistor</h4>
                                                 <hr>
                                                 <p>
@@ -81,7 +81,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                                                <img src="{{ URL::asset('images/img014.jpg') }}" alt="Motor Servo">
+                                                <img src="{{ URL::asset('images/img014.jpg') }}" alt="Potenciometro">
                                                 <h4>Potenciómetro</h4>
                                                 <hr>
                                                 <p>
@@ -89,7 +89,7 @@
                                                 </p>
                                             </div>
                                             <div class="col aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                                                <img src="{{ URL::asset('images/img015.jpg') }}" alt="Motor Servo">
+                                                <img src="{{ URL::asset('images/img015.jpg') }}" alt="Chip CD74HC4052">
                                                 <h4>Chip CD74HC4052</h4>
                                                 <hr>
                                                 <p>
@@ -100,58 +100,74 @@
                                     </div>
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
-
-
-                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
+                                    
+                                    <div class="container py-3 text-center" data-aos="fade-up">
+                                        <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Funções da etapa</i></b></h1>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#calibratingThePhotoresistor" data-aos="fade-up">calibratingThePhotoresistor()</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#freePlaces" data-aos="fade-up" data-aos-delay="100">freePlaces()</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#putOnfDisplay" data-aos="fade-up" data-aos-delay="200">putOnDisplay()</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="aos-init aos-animate" data-aos="slide-left">
+                                    
+                                    <div class="py-3 aos-init aos-animate" id="calibratingThePhotoresistor" data-aos="fade-up">
                                         <h1>Função <i>calibratingThePhotoresistor()</i></h1>
-                                        <p class="fs-5">
-                                            Esta função vai nos permitir calibrar os <i>photoresistors</i> de forma a que todos
-                                            funcionem em pleno, independentemente da luz ou local onde a maquete se encontra.
-                                            <br>
-                                            Com isto desenvolvemos esta função:
-                                        </p>
 
-                                        <div class="text-center my-5">
-                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-1.png') }}" alt="calibratingThePhotoresistor() [1]" class="w-50">
+                                        <div class="text-center my-5 img-code">
+                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-1.png') }}" alt="calibratingThePhotoresistor() [1]" class="my-3 w-50">
+                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-2.png') }}" alt="calibratingThePhotoresistor() [2]">
+                                            <br><br>
+                                            <button class="btn btn-secondary btn-detail">Informação</button>
                                         </div>
                                         
-                                        <p class="fs-5">
-                                            Esta função não vai receber nenhum parâmetro pois vai funcionar só como uma calibração,
-                                            de início, a função começa um ciclo de repetição, "<b>for</b>", em que percorre todos
-                                            os canais do multiplexador e seleciona o canal correspondente a "<b>i</b>", faz a leitura
-                                            do pino conectado e o valor é armazenado no "<b>valPhotoResistor</b>", que é exibido na 
-                                            consola. De seguida é iniciado um <i>switch-case</i>, que vai ajudar o código a decidir 
-                                            o que fazer para cada caso que encontrar ou definimos - os casos agrupam canais de acordo
-                                            com os LEDs encontrados. Quando um caso é encontrado, é chamado uma função 
-                                            "<b><i>turnOnOffLEDRGB()</i></b>" e introduzido vários valores recolhidos e um cálculo para
-                                            determinar a porta do PCF8574 certa.
-                                        </p>
-                                        <p class="fs-5">
-                                            O objetivo do cálculo "<b><i>(2 * i) - x</i></b>" é encontrar quais saídas no correspondente
-                                            PCF8574 devem ser usadas para acender os LEDs correspondentes a cada sensor.
-                                            <br>
-                                            Como funciona? Cada sensor precisa de dois pinos consecutivos do PCF8574 (um para o LED
-                                            "Livre" e outro para o LED "Ocupado"), o cálculo <b><i>(2 * i)</i></b> ajuda a localizar
-                                            esses pinos. Ele sempre dá um número par, porque os dois pinos usados por cada sensor
-                                            estão lado a lado, e o ajuste, <b><i>x</i></b>, é usado para começar cada grupo no pino 0
-                                            do PCF8574 correspondente, já que os sensores são divididos em grupos.
-                                        </p>
-
-                                        <div class="text-center my-5">
-                                            <img src="{{ URL::asset('images/calibratingThePhotoresistor-2.png') }}" alt="calibratingThePhotoresistor() [2]">
+                                        <div class="information">
+                                            <p class="fs-5">
+                                                Esta função vai nos permitir calibrar os <i>photoresistors</i> de forma a que todos
+                                                funcionem em pleno, independentemente da luz ou local onde a maquete se encontra.
+                                                <br>
+                                                Com isto desenvolvemos esta função:
+                                            </p>
+                                            <p class="fs-5">
+                                                Esta função não vai receber nenhum parâmetro pois vai funcionar só como uma calibração,
+                                                de início, a função começa um ciclo de repetição, "<b>for</b>", em que percorre todos
+                                                os canais do multiplexador e seleciona o canal correspondente a "<b>i</b>", faz a leitura
+                                                do pino conectado e o valor é armazenado no "<b>valPhotoResistor</b>", que é exibido na 
+                                                consola. De seguida é iniciado um <i>switch-case</i>, que vai ajudar o código a decidir 
+                                                o que fazer para cada caso que encontrar ou definimos - os casos agrupam canais de acordo
+                                                com os LEDs encontrados. Quando um caso é encontrado, é chamado uma função 
+                                                "<b><i>turnOnOffLEDRGB()</i></b>" e introduzido vários valores recolhidos e um cálculo para
+                                                determinar a porta do PCF8574 certa.
+                                            </p>
+                                            <p class="fs-5">
+                                                O objetivo do cálculo "<b><i>(2 * i) - x</i></b>" é encontrar quais saídas no correspondente
+                                                PCF8574 devem ser usadas para acender os LEDs correspondentes a cada sensor.
+                                                <br>
+                                                Como funciona? Cada sensor precisa de dois pinos consecutivos do PCF8574 (um para o LED
+                                                "Livre" e outro para o LED "Ocupado"), o cálculo <b><i>(2 * i)</i></b> ajuda a localizar
+                                                esses pinos. Ele sempre dá um número par, porque os dois pinos usados por cada sensor
+                                                estão lado a lado, e o ajuste, <b><i>x</i></b>, é usado para começar cada grupo no pino 0
+                                                do PCF8574 correspondente, já que os sensores são divididos em grupos.
+                                            </p>
+                                            <p class="fs-5">
+                                                Depois desta pequena explicação, seguidamente após chamar a nossa outra função, ele
+                                                lê o potenciómetro, componente que vai calibrar, e armazena na variável "<b>valuePot</b>"
+                                                e por fim verifica-se se o valor do <i>photoresistor</i> é maior ou igual ao do
+                                                potenciómetro - caso seja, o LED fica "Livre", caso contrário, o LED fica "Ocupado".
+                                            </p>
                                         </div>
-
-                                        <p class="fs-5">
-                                            Depois desta pequena explicação, seguidamente após chamar a nossa outra função, ele
-                                            lê o potenciómetro, componente que vai calibrar, e armazena na variável "<b>valuePot</b>"
-                                            e por fim verifica-se se o valor do <i>photoresistor</i> é maior ou igual ao do
-                                            potenciómetro - caso seja, o LED fica "Livre", caso contrário, o LED fica "Ocupado".
-                                        </p>
                                     </div>
 
                                     <hr class="aos-init aos-animate" data-aos="slide-left">
 
-                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
+                                    <div class="py-3 aos-init aos-animate" id="freePlaces" data-aos="fade-up">
                                         <h1>Função <i>freePlaces()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir visualizar os lugares que estão livres no parque, utilizando
@@ -161,7 +177,7 @@
                                             Com isto desenvolvemos esta função:
                                         </p>
 
-                                        <div class="text-center my-5">
+                                        <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/freePlaces.png') }}" alt="freePlaces()">
                                         </div>
                                         
@@ -183,17 +199,17 @@
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
 
-                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
+                                    <div class="py-3 aos-init aos-animate" id="putOnDisplay" data-aos="fade-up">
                                         <h1>Função <i>putOnDisplay()</i></h1>
                                         <p class="fs-5">
                                             Esta função vai nos permitir o controlo de ambos os displays de 7 segmentos, para exibir 
                                             o número correto de lugares vagos. A função deverá receber o número de lugares vagos e, com 
-                                            base nesse valor, definir quais os números a exibir em cada
+                                            base nesse valor, definir quais os números a exibir em cada display.
                                             <br>
                                             Com isto desenvolvemos esta função:
                                         </p>
 
-                                        <div class="text-center my-5">
+                                        <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/putOnDisplay.png') }}" alt="putOnDisplay()">
                                         </div>
                                         

@@ -18,9 +18,10 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
-        
         <!-- JQUERY -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+        <!-- SCRIPTS PERSONALIZADOS -->
+        <script src="{{ URL::asset('js/scripts.js') }}"></script>        
     </head>
     <body class="d-flex flex-column h-100">
         <script>
@@ -41,7 +42,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="{{ route('index') }}">Página Principal</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{{ route('galeria') }}">Galeria</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galeria</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="{{ route('galeria.index') }}">Etapas</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('galeria.maquete') }}">Maquete</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Etapas</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">

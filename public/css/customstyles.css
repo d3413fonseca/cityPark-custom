@@ -132,9 +132,14 @@ p {
 }
 
 /* estilo das imagens no conteúdo das páginas de etapas */
-.etapa img {
+.etapa img, .img-code img {
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
+}
+
+.information{
+    height: 0px;
+    overflow: hidden;
 }
 
 /* escala em hover */
@@ -155,6 +160,22 @@ p {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    box-shadow: 0px 0px 10px black;
+}
+#maquete img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px black;
+}
+#maquete {
+    text-align: right;
+}
+
+#img-scheme {
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
     box-shadow: 0px 0px 10px black;
 }
 

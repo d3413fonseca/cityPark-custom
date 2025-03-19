@@ -69,91 +69,116 @@
                                     </div>
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
-
+                                    
                                     <div class="container py-3 text-center">
                                         <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Circuito da Etapa</i></b></h1>
-
+                                        
                                         <img class="circuit aos-init aos-animate" data-aos="fade-up" src="{{ URL::asset('images/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
                                     </div>
-
+                                    
                                     <hr class="aos-init aos-animate" data-aos="slide-left">
 
-                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
-                                        <h1>Função <i>openCloseGate()</i></h1>
-                                        <p class="fs-5">
-                                            Esta função vai permitir a abertura e fecho de cada uma das cancelas.
-                                            Esta função deverá receber os parâmetros necessários para funcionar com qualquer um 
-                                            dos motores servo das cancelas e a deslocação do servo deve ser lenta.
-                                            <br>
-                                            Com isto desenvolvemos esta função:
-                                        </p>
-
-                                        <div class="text-center my-5">
-                                            <img src="{{ URL::asset('images/openCloseGate.png') }}" alt="openCloseGate()">
+                                    <div class="container py-3 text-center" data-aos="fade-up">
+                                        <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Funções da etapa</i></b></h1>
+                                        <div class="row">
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#openCloseGate" data-aos="fade-up">openCloseGate()</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#readRFID" data-aos="fade-up" data-aos-delay="100">readRFID()</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-dark" href="#displayMessage" data-aos="fade-up" data-aos-delay="200">displayMessage()</a>
+                                            </div>
                                         </div>
-                                        
-                                        <p class="fs-5">
-                                            Esta função vai receber dois parâmetros, o servo que vai mover e a indicação se
-                                            deve abrir ou não, verifica se tem que abrir ou fechar e de acordo com o servo indicado,
-                                            ela abre ou fecha a cancela.
-                                        </p>
                                     </div>
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
+                                    
+                                    <div class="py-3 aos-init aos-animate" id="openCloseGate" data-aos="fade-up">
+                                        <h1>Função <i>openCloseGate()</i></h1>
 
-                                    <div class="py-3 aos-init aos-animate" data-aos="fade-up">
-                                        <h1>Função <i>readRFID()</i></h1>
-                                        <p class="fs-5">
-                                            Esta função vai fazer a leitura de um cartão ou chave RFID e vai retornar o estado da permissão,
-                                            indicando se o cliente tem autorização para entrar ou sair do parque de estacionamento.
-                                            <br>
-                                            Com isto desenvolvemos esta função:
-                                        </p>
-
-                                        <div class="text-center my-5">
-                                            <img src="{{ URL::asset('images/readRFID.png') }}" alt="readRFID()" class="w-50">
+                                        <div class="text-center my-5 img-code">
+                                            <img src="{{ URL::asset('images/openCloseGate.png') }}" alt="openCloseGate()">
+                                            <br><br>
+                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
                                         </div>
                                         
-                                        <p class="fs-5">
-                                            Esta função é peculiar, pois não vai receber nenhum parâmetro e vai retornar só
-                                            dois valores que vão ser tratados como autorizado e não autorizado. A função começa
-                                            por procurar novos cartões e tenta ler o cartão, de seguida mostra o UID da <i>tag</i>,
-                                            para motivos de administração e retorna "<b>1</b>" como autorizado e "<b>2</b>" como
-                                            não autorizado, isto só para uma chave, mas no futuro será mudado para qualquer uma.
-                                        </p>
+                                        <div class="information">
+                                            <p class="fs-5">
+                                                Esta função vai permitir a abertura e fecho de cada uma das cancelas.
+                                                Esta função deverá receber os parâmetros necessários para funcionar com qualquer um 
+                                                dos motores servo das cancelas e a deslocação do servo deve ser lenta.
+                                            </p>
+                                            <p class="fs-5">
+                                                Com isto desenvolvemos esta função - recebe dois parâmetros: o servo que vai mover e a indicação se
+                                                deve abrir ou não, verifica se tem que abrir ou fechar e de acordo com o servo indicado,
+                                                ela abre ou fecha a cancela.
+                                            </p>
+                                        </div>
+                                        
                                     </div>
-
-                                    <hr class="aos-init aos-animate" data-aos="slide-left">
-
+                                    
+                                    <hr class="aos-init aos-animate" data-aos="slide-right">
+                                    
+                                    <div class="py-3 aos-init aos-animate" id="readRFID" data-aos="fade-up">
+                                        <h1>Função <i>readRFID()</i></h1>
+                                        
+                                        
+                                        <div class="text-center my-5 img-code">
+                                            <img src="{{ URL::asset('images/readRFID.png') }}" alt="readRFID()" class="w-50">
+                                            <br><br>
+                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
+                                        </div>
+                                        
+                                        <div class="information">
+                                            <p class="fs-5">
+                                                Esta função vai fazer a leitura de um cartão ou chave RFID e vai retornar o estado da permissão,
+                                                indicando se o cliente tem autorização para entrar ou sair do parque de estacionamento.
+                                            </p>
+                                            <p class="fs-5">
+                                                Com isto desenvolvemos esta função. Esta função é peculiar, pois não vai receber nenhum parâmetro e vai retornar só
+                                                dois valores que vão ser tratados como autorizado e não autorizado. A função começa
+                                                por procurar novos cartões e tenta ler o cartão, de seguida mostra o UID da <i>tag</i>,
+                                                para motivos de administração e retorna "<b>1</b>" como autorizado e "<b>2</b>" como
+                                                não autorizado, isto só para uma chave, mas no futuro será mudado para qualquer uma.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="aos-init aos-animate" id="displayMessage" data-aos="slide-left">
+                                    
                                     <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                         <h1>Função <i>displayMessage()</i></h1>
-                                        <p class="fs-5">
-                                            Esta função vai nos permitir apresentar mensagens nos ecrãs LCD de entrada e saída
-                                            do parque de estacionamento.
-                                            <br>
-                                            Com isto desenvolvemos esta função:
-                                        </p>
-
-                                        <div class="text-center my-5">
+                                        
+                                        
+                                        <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/displayMessage.png') }}" alt="displayMessage()">
+                                            <br><br>
+                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
                                         </div>
                                         
-                                        <p class="fs-5">
-                                            Esta função vai receber 4 parâmetros, "<b>display</b>" que vai ser o LCD onde vai
-                                            ser apresentada a mensagem, a "<b>message</b>" que é a mensagem em si, "<b>col</b>"
-                                            que é a coluna onde a mensagem vai ser apresentada no LCD, "<b>lin</b>" que vai ser
-                                            em que linha irá ser apresentada a mensagem no LCD e por fim "<b>clearLCD</b>", que
-                                            vai indicar se o LCD está limpo ou não. 
-                                            <br>
-                                            Dentro da função verificamos se a variável 
-                                            "clearLCD" é verdadeira ou não, para se caso termos de limpar, e de seguida 
-                                            indicamos em que linha e coluna deve estar o cursor do LCD, com as variáveis
-                                            anteriormente mencionadas, e mostramos a mensagem no LCD indicado.
-                                        </p>
+                                        <div class="information">
+                                            <p class="fs-5">
+                                                Esta função vai nos permitir apresentar mensagens nos ecrãs LCD de entrada e saída
+                                                do parque de estacionamento.
+                                            </p>
+                                            <p class="fs-5">
+                                                Com isto desenvolvemos esta função - vai receber 4 parâmetros: "<b>display</b>", que vai ser o LCD onde vai
+                                                ser apresentada a mensagem, a "<b>message</b>" que é a mensagem em si, "<b>col</b>"
+                                                que é a coluna onde a mensagem vai ser apresentada no LCD, "<b>lin</b>" que vai ser
+                                                em que linha irá ser apresentada a mensagem no LCD e por fim "<b>clearLCD</b>", que
+                                                vai indicar se o LCD está limpo ou não. 
+                                                <br>
+                                                Dentro da função verificamos se a variável 
+                                                "clearLCD" é verdadeira ou não, para se caso termos de limpar, e de seguida 
+                                                indicamos em que linha e coluna deve estar o cursor do LCD, com as variáveis
+                                                anteriormente mencionadas, e mostramos a mensagem no LCD indicado.
+                                            </p>
+                                        </div>
                                     </div>
                                 </section>
                             </article>
-                            <!-- Comments section-->
                         </div>
                     </div>
                 </div>
