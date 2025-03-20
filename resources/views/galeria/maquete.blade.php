@@ -16,13 +16,15 @@
     
     
     <hr>
-    <div class="text-center my-3">
-        <h1><b>Esquema Completo</b></h1>
-        <button id="btn-scheme" class="btn btn-secondary">Ver esquema completo</button>
+    <div class="scheme-container">
+        <div class="text-center my-3 header">
+            <h1><b>Esquema Completo</b></h1>
+        </div>
+        <div class="img-scheme">
+            <img class="img-fluid rounded" src="{{ URL::asset('images/fullCircuit.png') }}" alt="..." />
+        </div>
     </div>
-    <div id="img-scheme">
-        <img class="img-fluid rounded" src="{{ URL::asset('images/fullCircuit.png') }}" alt="..." />
-    </div>
+   
 
 </div>
 

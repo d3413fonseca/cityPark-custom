@@ -21,7 +21,12 @@
         <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
         <!-- SCRIPTS PERSONALIZADOS -->
-        <script src="{{ URL::asset('js/scripts.js') }}"></script>        
+        <script src="{{ URL::asset('js/scripts.js') }}"></script>      
+        
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body class="d-flex flex-column h-100">
         <script>
@@ -89,7 +94,7 @@
 
         <div class="sub-footer my-5 mx-auto">
             <a href="https://colegiosaogoncalo.pt/ensino/ensino-secundario/cursos-com-planos-proprios/informatica-aplicada-a-web/">
-                <img src="{{ URL::asset('images/logo002.png') }}" alt="Informática Aplicada à Web">
+                <img src="{{ URL::asset('images/logo002.png') }}" alt="Informática Aplicada à Web" style="width: 297px; height: 110px;">
             </a>
             <a href="https://colegiosaogoncalo.pt/">
                 <img src="{{ URL::asset('images/logo001.png') }}" class="mx-4" alt="Colégio São Gonçalo" style="width: 150px; height: 150px;">

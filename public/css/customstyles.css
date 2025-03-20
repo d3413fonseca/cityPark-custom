@@ -156,6 +156,16 @@ p {
     transform: scale(1.05);
 }
 
+.btn-detail{
+    padding: 10px 20px 10px 20px;
+}
+.info{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 #galeria img {
     width: 300px;
     height: 300px;
@@ -172,14 +182,12 @@ p {
     text-align: right;
 }
 
-#img-scheme {
+.img-scheme {
     height: 400px;
     overflow-y: auto;
     border-radius: 25px;
     box-shadow: 0px 0px 10px black;
 }
-
-.circuit{
-    width: 50%;
-    height: 50%;
+.img-scheme img {
+    width: 100%;
 }

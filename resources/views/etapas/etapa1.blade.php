@@ -70,10 +70,13 @@
 
                                     <hr class="aos-init aos-animate" data-aos="slide-right">
                                     
-                                    <div class="container py-3 text-center">
-                                        <h1 class="my-4 aos-init aos-animate" data-aos="fade-down"><b><i>Circuito da Etapa</i></b></h1>
-                                        
-                                        <img class="circuit aos-init aos-animate" data-aos="fade-up" src="{{ URL::asset('images/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
+                                    <div class="container py-3 scheme-container" data-aos="fade-up">
+                                        <div class="header text-center my-3">
+                                            <h1><b><i>Circuito da Etapa</i></b></h1>
+                                        </div>
+                                        <div class="img-scheme">
+                                            <img src="{{ URL::asset('images/etapa01Circuit.png') }}" alt="Circuito da Etapa 1">
+                                        </div>
                                     </div>
                                     
                                     <hr class="aos-init aos-animate" data-aos="slide-left">
@@ -100,8 +103,6 @@
 
                                         <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/openCloseGate.png') }}" alt="openCloseGate()">
-                                            <br><br>
-                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
                                         </div>
                                         
                                         <div class="information">
@@ -127,8 +128,6 @@
                                         
                                         <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/readRFID.png') }}" alt="readRFID()" class="w-50">
-                                            <br><br>
-                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
                                         </div>
                                         
                                         <div class="information">
@@ -154,8 +153,6 @@
                                         
                                         <div class="text-center my-5 img-code">
                                             <img src="{{ URL::asset('images/displayMessage.png') }}" alt="displayMessage()">
-                                            <br><br>
-                                            <button class="btn btn-secondary btn-detail" id="">Informação</button>
                                         </div>
                                         
                                         <div class="information">
