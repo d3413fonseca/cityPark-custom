@@ -85,20 +85,6 @@ body{
     color: white;
     text-shadow: 2px 2px 2px black;
 }
-#objetivos::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../../images/img010.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    
-    filter: brightness(0.6);
-    z-index: -1;
-}
 #objetivos ::selection{
     color: #3297fd;
     background: none;

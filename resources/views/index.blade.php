@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', "Página Principal")
+
 @section('content')
     
             <!-- Header-->
@@ -178,7 +180,7 @@
 
                         <div class="col-lg-4 mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{ URL::asset('images/placeholder002.jpg') }}" alt="..." />
+                                <img class="card-img-top" src="{{ URL::asset('images/img022.jpg') }}" alt="..." />
                                 <div class="card-body p-4">
                                     <h3 class="card-title mb-2"><b> Etapa 2 </b></h3>
                                     <p class="card-text">Lugares de Estacionamento</p>
