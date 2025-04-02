@@ -12,7 +12,7 @@
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-5 fw-bolder text-white mb-2">Seja bem-vindo ao nosso Projeto</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">
-                                    Bem-vindo ao nosso projeto <b><i>CityPark</i></b>, um mini sistema de parque de estacionamento feito pela turma 
+                                    Bem-vindo ao projeto <b><i>CityPark</i></b>, um mini sistema de parque de estacionamento feito pela turma 
                                     12º1C2 para a disciplina de TAWEB.
                                 </p>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">

@@ -1,14 +1,22 @@
 $(document).ready(function() {
     // ver circuitos completos
-    $(".scheme-container .header").append("<button class='btn btn-dark btn-scheme' class='btn btn-secondary'>Ver esquema completo</button>");
+    $(".scheme-container .header").append("<button class='btn btn-dark btn-scheme' class='btn btn-secondary'></button>");
 
-    $(".btn-scheme").click(function() {
+    $(".btn-scheme")
+        .text("Ver circuito completo")
+        .click(function() {
         let img = $(".img-scheme");
         let expanded = img.hasClass("expanded");
         
         img.css({
             "height": expanded ? "400px" : "100%"
         });
+
+        if(!expanded){
+            $(this).text("Minimizar circuito");
+        } else {
+            $(this).text("Ver circuito completo");
+        }
         
         img.toggleClass("expanded");    
     });
@@ -26,5 +34,12 @@ $(document).ready(function() {
 
         info.toggleClass("info");
         info.toggleClass("expanded");
+    });
+
+
+    $(".galeria-slide").slick({
+        prevArrow: '',
+        nextArrow: '',
+        adaptiveHeight: true,
     });
 })

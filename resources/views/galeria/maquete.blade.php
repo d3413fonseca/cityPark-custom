@@ -5,21 +5,27 @@
 @section('content')
 
 <div class="container">
-    <div id="maquete">
+    <div id="maquete" data-aos="fade-up">
         <h1 class="text-center my-3"><b>Maquete do Projeto</b></h1>
         <hr>
-        <div class="row gx-2 gy-2 rows-cols-md-4">
-            <div class="col">
-                <img class="img-fluid rounded my-2" src="{{ URL::asset('images/gal013.jpg') }}" alt="..." />
+        <div class=" galeria-slide">
+            <div>
+                <img src="{{ URL::asset('images/gal013.jpg') }}" alt="..." />
             </div>
-            <h4 class="my-2"><i>Maquete Inicial</i></h4>
+            <div>
+                <img src="{{ URL::asset('images/img022.jpg') }}" alt="..." />
+            </div>
+            <div>
+                <img src="{{ URL::asset('images/gal014.jpg') }}" alt="..." />
+            </div>
         </div>
+        <h4 class="my-2"><i>Maquete Inicial</i></h4>
     </div>
     
     
-    <hr>
-
-    <div class="scheme-container my-5">
+    <hr data-aos="fade-right">
+    
+    <div class="scheme-container my-5" data-aos="fade-up">
         <div class="text-center my-3 header">
             <h1><b>Instalação de Placas para Lugares de Estacionamento</b></h1>
         </div>
@@ -27,10 +33,10 @@
             <img class="img-fluid rounded" src="{{ URL::asset('images/lugaresCircuit.png') }}" alt="Instalação de Placas para Lugares de Estacionamento" />
         </div>
     </div>
+    
+    <hr data-aos="fade-left">
 
-    <hr>
-
-    <div class="scheme-container my-5">
+    <div class="scheme-container my-5" data-aos="fade-up">
         <div class="text-center my-3 header">
             <h1><b>Esquema Completo</b></h1>
         </div>

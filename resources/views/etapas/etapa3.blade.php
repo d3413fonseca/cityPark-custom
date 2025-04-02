@@ -114,63 +114,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <hr class="aos-init aos-animate" data-aos="slide-left">
-
-                                <div class="py-3 aos-init aos-animate" data-aos="fade-up">
-                                    <h1>Gestão de <i>RFIDs</i></i></h1>
-                                    <p class="fs-5">
-                                        Esta função vai nos permitir visualizar os lugares que estão livres no parque, utilizando
-                                        um display de 7 segmentos. Neste display, vão ser contabilizados o número de lugares livres
-                                        normais e lugares livres prioritários num outro display.
-                                        <br>
-                                        Com isto desenvolvemos esta função:
-                                    </p>
-
-                                    <div class="text-center my-5">
-                                        <img src="{{ URL::asset('images/freePlaces.png') }}" alt="freePlaces()">
-                                    </div>
-                                    
-                                    <p class="fs-5">
-                                        Esta função não vai receber nenhum parâmetro, pois só vai contar os lugares livres.
-                                        A função inicia por ler vários valores: o valor do potênciómetro, "<b><i>valuePot</i></b>",
-                                        e os valores dos lugares livres normais e prioritários, "<b><i>priorityFree</i></b>" e 
-                                        "<b><i>normalFree</i></b>". Os últimos dois valores, ao serem lidos, vão sempre ser os
-                                        mesmos - 6 e 9 lugares respetivamente.
-                                        <br>
-                                        De seguida é iniciado um ciclo de repetição, "<b><i>for</i></b>", em que percorre todos 
-                                        os canais do multiplicador, tal como na função anterior, e para cada um lê o valor do 
-                                        <i>photoresistor</i> e armazena na variável "<b><i>valPhotoResistor</i></b>". Continuando, 
-                                        é verificado se o valor do <i>photoresistor</i> é maior ou igual que o valor do 
-                                        potenciómetro, caso seja, ele inicia outra condição para verificar qual lugar é que está 
-                                        ocupado, um normal ou prioritário, e retira de acordo.
-                                    </p>
-                                </div>
-
-                                <hr class="aos-init aos-animate" data-aos="slide-right">
-
-                                <div class="py-3 aos-init aos-animate" data-aos="fade-up">
-                                    <h1>Função <i>putOnDisplay()</i></h1>
-                                    <p class="fs-5">
-                                        Esta função vai nos permitir o controlo de ambos os displays de 7 segmentos, para exibir 
-                                        o número correto de lugares vagos. A função deverá receber o número de lugares vagos e, com 
-                                        base nesse valor, definir quais os números a exibir em cada
-                                        <br>
-                                        Com isto desenvolvemos esta função:
-                                    </p>
-
-                                    <div class="text-center my-5">
-                                        <img src="{{ URL::asset('images/putOnDisplay.png') }}" alt="putOnDisplay()">
-                                    </div>
-                                    
-                                    <p class="fs-5">
-                                        Esta função vai receber os lugares livres normais e prioritários, e de seguida é criado
-                                        uma matriz de  "<b><i>bytes</i></b>", que vai servir como indicação em relação ao número que 
-                                        queremos que esteja no display. Por fim, inicia um ciclo de repetição, "<b><i>for</i></b>", e 
-                                        vai comparar o número de lugares livres com um número do <i>byte</i> que criamos, e mostrar
-                                        esse número.
-                                    </p>
-                                </div>
                             </section>
                         </article>
                         <!-- Comments section-->
