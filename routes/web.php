@@ -32,20 +32,20 @@ Route::prefix('etapas')->group(function () {
     })->name('etapa3');
 });
 
-Route::get('/dashboard', 
+Route::get('/dashboard',  
     [AdminController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function () {
     // Rotas para os Clientes
-    Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes');
-    Route::get('/clientes/create', [ClientesController::class, 'create'])->name('clientes.create');
-    Route::post('/clientes/store', [ClientesController::class, 'store'])->name('clientes.store');
-    Route::get('/clientes/{clientes}', [ClientesController::class, 'show'])->name('clientes.show');
-    Route::get('/clientes/{clientes}/edit', [ClientesController::class, 'edit'])->name('clientes.edit');
-    Route::put('/clientes/{clientes}/update', [ClientesController::class, 'update'])->name('clientes.update');
-    Route::delete('/clientes/{clientes}/destroy', [ClientesController::class, 'destroy'])->name('clientes.destroy');
-
+    Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes');    
+    Route::get('/clientes/create', [ClientesController::class, 'create'])->name('client.create'); 
+    Route::post('/clientes/store', [ClientesController::class, 'store'])->name('client.store'); 
+    Route::get('/clientes/{clientes}/edit', [ClientesController::class, 'edit'])->name('client.edit');
+    Route::put('/clientes/{clientes}/update', [ClientesController::class, 'update'])->name('client.update'); 
+    Route::delete('/clientes/{clientes}/destroy', [ClientesController::class, 'destroy'])->name('client.destroy'); 
+    Route::post('/clientes/getInformation', [ClientesController::class, 'getInformation'])->name('client.getInformation'); 
+    
     // Rotas para os RFIDs
     Route::get('/rfid', [RfidController::class, 'index'])->name('rfid');  
     Route::get('/rfid/create', [RfidController::class, 'create'])->name('rfid.create'); 
@@ -53,16 +53,12 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/rfid/{rfid}/edit', [RfidController::class, 'edit'])->name('rfid.edit');
     Route::put('/rfid/{rfid}/update', [RfidController::class, 'update'])->name('rfid.update'); 
     Route::delete('/rfid/{rfid}/destroy', [RfidController::class, 'destroy'])->name('rfid.destroy'); 
-
-    Route::get('/ethernetshield/{id}/{rfid_status}', [EthernetController::class, 'updateEstado']);
 });
 
 Route::middleware('auth:sanctum')->prefix('admin')->group(function () {
     Route::get('/ethernetshield/requestrfid', [EthernetController::class, 'requestRFID']);
 });
 
-Route::resource("clientes", ClientesController::class);
-Route::resource("rfid", RfidController::class);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

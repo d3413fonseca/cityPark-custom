@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-                            <video class="img-fluid rounded-3 video-shadow my-5" id="headervid" src="{{ URL::asset('videos/vid001-mute.mp4') }}" type="video/mp4" controls autoplay loop></video>
+                            <video class="img-fluid rounded-3 video-shadow my-5" id="headervid" src="{{ URL::asset('videos/vid002.mp4') }}" type="video/mp4" controls muted autoplay loop></video>
                         </div>
                     </div>
                 </div>

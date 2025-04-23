@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ URL::asset('images/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::asset('images/favicon-16x16.png') }}">
         <link rel="manifest" href="{{ URL::asset('images/site.webmanifest') }}">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>CityPark | Dashboard</title>
 
         <!-- Google Font: Source Sans Pro -->
@@ -901,6 +902,19 @@
         <script src="{{ URL::asset('plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
         <script src="{{ URL::asset('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
         <script src="{{ URL::asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+        
+        <!-- InputMask -->
+        <script src="{{ URL::asset('plugins/moment/moment.min.js') }}"></script>
+        <script src="{{ URL::asset('plugins/inputmask/jquery.inputmask.min.js') }}"></script>        
+        <!-- date-range-picker -->
+        <script src="{{ URL::asset('plugins/daterangepicker/daterangepicker.js') }}"></script>
+        <!-- bootstrap color picker -->
+        <script src="{{ URL::asset('plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
+        <!-- Tempusdominus Bootstrap 4 -->
+        <script src="{{ URL::asset('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+        <!-- Bootstrap Switch -->
+        <script src="{{ URL::asset('plugins/bootstrap-switch/js/bootstrap-switch.min.js') }}"></script>
+        
 
         <!-- AdminLTE for demo purposes -->
         <script src="{{ URL::asset('dist/js/demo.js') }}"></script>
@@ -911,6 +925,7 @@
         
         <!-- My jQuery Functions -->
         <script src="{{ URL::asset('js/admin.js?v=0.1') }}"></script>    
+        <script src="{{ URL::asset('js/clients.js?v=0.1') }}"></script>    
         
         
         <!-- Page specific script -->
@@ -933,6 +948,8 @@
                 $("input[data-bootstrap-switch]").each(function () {
                     $(this).bootstrapSwitch('state', $(this).prop('checked'));
                 });
+                
+                $('[data-mask]').inputmask();
 
             });                                      
         </script>

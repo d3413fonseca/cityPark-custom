@@ -8,7 +8,7 @@
     <div id="maquete" data-aos="fade-up">
         <h1 class="text-center my-3"><b>Maquete do Projeto</b></h1>
         <hr>
-        <div class=" galeria-slide">
+        <div class="galeria-slide tall">
             <div>
                 <img src="{{ URL::asset('images/gal013.jpg') }}" alt="..." />
             </div>
@@ -20,18 +20,6 @@
             </div>
         </div>
         <h4 class="my-2"><i>Maquete Inicial</i></h4>
-    </div>
-    
-    
-    <hr data-aos="fade-right">
-    
-    <div class="scheme-container my-5" data-aos="fade-up">
-        <div class="text-center my-3 header">
-            <h1><b>Instalação de Placas para Lugares de Estacionamento</b></h1>
-        </div>
-        <div class="img-scheme">
-            <img class="img-fluid rounded" src="{{ URL::asset('images/lugaresCircuit.png') }}" alt="Instalação de Placas para Lugares de Estacionamento" />
-        </div>
     </div>
     
     <hr data-aos="fade-left">

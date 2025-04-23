@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Editar RFID</h1>
+                    <h1 class="m-0">RFID</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -26,12 +26,12 @@
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Adicionar <small>preencha o formulário</small></h3>
+                <h3 class="card-title">Editar <small>preencha o formulário</small></h3>
             </div>
             <div class="card-body">
                 @if ($errors->any())
                 <div class="alert alert-danger">
-                    <b>Existem alguns problemas com os dados introduzidos!</b>
+                    <strong>Whoops!</strong> Existem Alguns problemas com os dados introduzidos!
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{$error}}</li>
@@ -40,9 +40,10 @@
                 </div>
                 <br />
                 @endif
-                <form action="{{ route('admin.rfid.update',$rfid->id) }}" method="POST" class="form-horizontal">
+                
+                <form method="post" action="{{route('admin.rfid.update', $rfid->id)}}" class="form-horizontal">
                     @csrf
-                    @method('PUT')
+                    @method('put')
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Chave do RFID:</label>
@@ -52,9 +53,9 @@
                                         <span class="input-group-text"><i class="fas fa-laptop"></i></span>
                                     </div>
                                     <input type="text" name="rfid_mac" class="form-control" 
-                                    data-inputmask="'mask': 'AA AA AA AA AA'" 
-                                    data-mask placeholder="Digite a chave RFID"
-                                    value="{{ $rfid->rfid_mac }}">
+                                           data-inputmask="'mask': '** ** ** ** **'" 
+                                           data-mask placeholder="Digite a chave RFID"
+                                           value='{{ $rfid->rfid_mac }}'>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +64,7 @@
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     @php
-                                        $checked = ($rfid->rfid_status == 1) ? "checked" : "";
+                                        $checked = ($rfid->rfid_status == "Ativo") ? "checked" : "";
                                     @endphp
                                     <input type="checkbox" name="rfid_status" {{$checked}}  data-bootstrap-switch data-off-color="danger" data-on-color="success">
                                 </div>

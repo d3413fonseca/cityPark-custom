@@ -31,7 +31,7 @@
             <div class="card-body">
                 @if ($errors->any())
                 <div class="alert alert-danger">
-                    <b>Existem alguns problemas com os dados introduzidos!</b>
+                    <strong>Whoops!</strong> Existem Alguns problemas com os dados introduzidos!
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{$error}}</li>
@@ -40,8 +40,8 @@
                 </div>
                 <br />
                 @endif
-
-                <form action="{{ route('admin.rfid.store') }}" method="POST" class="form-horizontal">
+                
+                <form method="post" action="{{route('admin.rfid.store')}}" class="form-horizontal">
                     @csrf
                     <div class="card-body">
                         <div class="form-group row">
@@ -51,7 +51,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-laptop"></i></span>
                                     </div>
-                                    <input type="text" name="rfid_mac" class="form-control" data-inputmask="'mask': 'AA AA AA AA AA'" data-mask placeholder="Digite a chave RFID">
+                                    <input type="text" name="rfid_mac" class="form-control" data-inputmask="'mask': '** ** ** ** **'" data-mask placeholder="Digite a chave RFID">
                                 </div>
                             </div>
                         </div>

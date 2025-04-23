@@ -86,8 +86,8 @@
                                 </div>
 
                                 <hr class="aos-init aos-animate" data-aos="slide-right">
-
-
+                                
+                                
                                 <div class="py-3 aos-init aos-animate" data-aos="fade-up">
                                     <h1>Instalação do <i>Laravel & Breeze</i></h1>
                                     <p class="fs-5">
@@ -100,11 +100,11 @@
                                         <div class="col">
                                             <img src="{{ URL::asset('images/img019.png') }}" alt="WAMP / XAMPP" class="w-50">
                                         </div>
-
+                                        
                                         <div class="col">
                                             <img src="{{ URL::asset('images/img020.png') }}" alt="Composer" class="w-50">
                                         </div>
-
+                                        
                                         <div class="col">
                                             <img src="{{ URL::asset('images/img017.png') }}" alt="Laravel" class="w-50">
                                         </div>
@@ -113,6 +113,24 @@
                                             <img src="{{ URL::asset('images/img021.png') }}" alt="Laravel Breeze" class="w-50">
                                         </div>
                                     </div>
+                                </div>
+
+                                <hr class="aos-init aos-animate" data-aos="slide-left">
+
+                                <div class="py-3 aos-init aos-animate" data-aos="fade-up">
+                                    <h1>Página de Administração <i>CityPark</i></h1>
+                                    <p class="fs-5">
+                                        Para esta etapa, foi criada, a partir da framework Laravel, uma página de administração,
+                                        feita a partir do <i>template</i> <b>AdminLTE</b>.
+                                    </p>
+                                    
+                                    <div class="text-center my-5">
+                                        <img src="{{ URL::asset('images/img023.png') }}" alt="Página de Administração" class="w-75">
+                                    </div>
+
+                                    <p class="fs-5">
+                                        Esta página de administração permite gerir os <b>Clientes</b> e os <b>RFIDs</b>,
+                                        registando os seus dados pessoais e a Chave do RFID.
                                 </div>
                             </section>
                         </article>

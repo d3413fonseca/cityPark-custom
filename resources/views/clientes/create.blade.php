@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Cliente</h1>
+                    <h1 class="m-0">Clientes</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -31,7 +31,7 @@
             <div class="card-body">
                 @if ($errors->any())
                 <div class="alert alert-danger">
-                    <b>Existem alguns problemas com os dados introduzidos!</b>
+                    <strong>Whoops!</strong> Existem Alguns problemas com os dados introduzidos!
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{$error}}</li>
@@ -41,130 +41,127 @@
                 <br />
                 @endif
                 
-                <form action="{{ route('admin.clientes.store') }}" method="POST" class="form-horizontal">
+                <form method="post" action="{{route('admin.client.store')}}" class="form-horizontal">
                     @csrf
-
                     <div class="card-body">
-                        <!-- NOME -->
                         <div class="form-group row">
-                            <label for="cli_name" class="col-sm-2 col-form-label">Nome*:</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Nome do Cliente: <span class="text-red">*</span></label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" name="cli_name" class="form-control" placeholder="Digite o seu nome">
+                                    <input type="text" name="cli_name" class="form-control"                                            
+                                           value="{{ old('cli_name') }}"
+                                           placeholder="Digite o nome do cliente">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- E-MAIL -->
                         <div class="form-group row">
-                            <label for="cli_email" class="col-sm-2 col-form-label">E-mail*:</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail: <span class="text-red">*</span></label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <span class="input-group-text"><i class="fas fa-mail-bulk"></i></span>
                                     </div>
-                                    <input type="text" name="cli_email" class="form-control" placeholder="Digite o seu e-mail">
+                                    <input type="text" name="cli_email" class="form-control" placeholder="Digite o e-mail do cliente">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- NÚMERO DE TELEMÓVEL -->
                         <div class="form-group row">
-                            <label for="cli_phone" class="col-sm-2 col-form-label">Número de telefone:</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Telefone: <span class="text-red">*</span></label>
+                            <div class="col-sm-3">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                     </div>
-                                    <input type="text" name="cli_phone" class="form-control" placeholder="Digite o seu número de telefone">
+                                    <input type="text" class="form-control" 
+                                           name="cli_phone"
+                                           data-inputmask='"mask": "(999) 999 999 999"' data-mask>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ENDEREÇO -->
+                        
                         <div class="form-group row">
-                            <label for="cli_address1" class="col-sm-2 col-form-label">Endereço*:</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Morada: <span class="text-red">*</span></label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-address-book"></i></span>
                                     </div>
-                                    <input type="text" name="cli_address1" class="form-control" placeholder="Digite o seu endereço">
+                                    <input type="text" name="cli_address1" class="form-control" placeholder="Digite a morada">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ENDEREÇO SECUNDÁRIO -->
                         <div class="form-group row">
-                            <label for="cli_address2" class="col-sm-2 col-form-label">Endereço secundário:</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="far fa-address-book"></i></span>
+                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
                                     </div>
-                                    <input type="text" name="cli_address2" class="form-control" placeholder="Digite o seu endereço secundário">
+                                    <input type="text" name="cli_address2" class="form-control" placeholder="Digite a morada">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- CÓDIGO POSTAL -->
                         <div class="form-group row">
-                            <label for="cli_zipcode" class="col-sm-2 col-form-label">Código Postal*:</label>
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Código Postal: <span class="text-red">*</span></label>
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" 
+                                           name="cli_zipcode"
+                                           data-inputmask='"mask": "9999-999"' data-mask>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Localidade: <span class="text-red">*</span></label>
                             <div class="col-sm-10">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <span class="input-group-text"><i class="fas fa-address-book"></i></span>
                                     </div>
-                                    <input type="text" name="cli_zipcode" class="form-control" placeholder="Digite o seu código postal">
+                                    <input type="text" class="form-control" 
+                                           name="cli_city"
+                                           placeholder="Digite a localidade">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- CIDADE -->
                         <div class="form-group row">
-                            <label for="cli_city" class="col-sm-2 col-form-label">Cidade*:</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">NIF: <span class="text-red">*</span></label>
+                            <div class="col-sm-3">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
-                                    <input type="text" name="cli_city" class="form-control" placeholder="Digite a sua cidade">
+                                    <input type="text" class="form-control" 
+                                           name="cli_nif"
+                                           data-inputmask='"mask": "999999999"' data-mask>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- NIF -->
-                        <div class="form-group row">
-                            <label for="cli_nif" class="col-sm-2 col-form-label">NIF*:</label>
-                            <div class="col-sm-10">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-address-card"></i></span>
-                                    </div>
-                                    <input type="text" name="cli_nif" class="form-control" placeholder="Digite o seu NIF">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- RFID - dropdown (fazer depois) -->
-                        <div class="form-group row">
-                            <label for="cli_rfidid" class="col-sm-2 col-form-label">RFID*:</label>
-                            <div class="col-sm-10">
-                                <select name="cli_rfidid" class="form-control">
-                                    <option value="" selected disabled>Selecione um RFID</option>
-                                    @foreach ($rfid as $anrfid)
-                                        <option value="{{ $anrfid->id }}">{{ $anrfid->rfid_mac }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <i>*Obrigatório</i>
                         </div>
                         
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Cartão RFID:</label>
+                            <div class="col-md-3 col-sm-3 ">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-car"></i></span>
+                                    </div>
+                                    <select class="form-control" name="cli_rfidid" id="cli_rfidid">
+                                        <option value="">Selecione um RFID...</option>
+                                        @foreach ($RFIDs as $RFID)                                        
+                                            <option value="{{ $RFID->id}}">{{ $RFID->rfid_mac }}</option>
+                                        @endforeach
+                                    </select>
+                                    <input type="hidden" id="cli_old_rfidid" value="{{ old('cli_rfidid') }}">
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
                         <div class="row">
                             <div class="col-6 ">
                                 <button class="btn btn-primary float-sm-right cancel-button" data-route="admin/clientes">Cancelar</button>
